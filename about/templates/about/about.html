@@ -1,0 +1,74 @@
+{% extends "about/layout.html" %}
+
+{% load static %}
+
+{% block content %}
+      <div id="particles-js"></div>
+      <section class="sec_info">
+        <div class="intro" id="intro"></div>
+        <div class="about_banner"></div>
+        <div class="container sec_info_text">
+          <div class="text_about_left">
+            <h1>Кто мы?</h1>
+            <p>Команда Взгляд в будущее.  Мы создаем  IT-продукты, которые эффективны сегодня и могут развиваться в будущем. Ваши правнуки не будут считать наши идеи странными!</p>
+            </div>
+        </div>
+      </section>
+      <section class="plan">
+        <div class="container">
+          <img src="{% static 'index/img/icon_15.jpg' %}" width="30%">
+          <h1><strong>План на 2023 год – стать крупнейшей IT-командой колледжа!</strong></h1>
+        </div>
+      </section>
+      <section class="sostav">
+        <div class="structure">
+          <h1 class="fw-bold">Состав команды</h1>
+            {% for team in team %}
+            <div class="card">
+                <img src="{{ team.team_image.url }}" alt="..." class="round" height="60%" width="40%">
+                <div class="card_name">
+                  <h1><strong>{{ team.team_title }}</strong></h1>
+                </div>
+                <div class="card_spec">
+                  <p class="title">{{ team.team_description }}</p>
+                </div>
+                  <a class="icon" href="{{ team.team_url_github }}"><i class="fa fa-github"></i></a>
+                  <a class="icon" href="{{ team.team_url_telegram }}"><i class="fa fa-telegram"></i></a>
+                  <a class="icon" href="{{ team.team_url_vk }}"><i class="fa fa-vk"></i></a>
+            </div>
+            {% endfor %}
+        </div>
+      </section>
+      <section class="awards">
+        <h1 class="aw_text"><strong>Наши награды</strong></h1>
+        <div class="container container--slider">
+            <div class="slider">
+                <button id="back" class="move-btn">
+                    <img src="{% static 'index/img/back.png' %}" alt="НАЗАД">
+                </button>
+
+                <div class="cards cards-slider" id="slider">
+                    <div class="cards-line" id="line" style="left: 0px">
+                        {% for awards in awards %}
+                            <div id="slide" class="awards_card">
+                              <a href="{{ awards.url }}">
+                                <img src="{{ awards.image.url }}" class="card-img-top">
+                                <div class="card-body">
+                                    <h5><strong>{{ awards.title }}</strong></h5>
+                                    <p class="card-text">{{ awards.description }}</p>
+                                </div>
+                              </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <button id="next" class="move-btn">
+                    <img src="{% static 'index/img/next.png' %}" alt="ВПЕРЁД">
+                </button>
+            </div>
+        </div>
+      </section>
+
+    <script src="{% static 'index/js/slider.js' %}"></script>
+{% endblock %}

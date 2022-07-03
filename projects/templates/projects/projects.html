@@ -1,0 +1,191 @@
+{% extends "projects/layout.html" %}
+
+{% load static %}
+
+{% block content %}
+
+        <section class="project_info">
+        <div class="project_circle_big"></div>
+        <div class="project_circle_little"></div>
+        <div class="circle_averagelittle"></div>
+      <div class="container text-project">
+        <div class="caption">
+          <h2><b>Мы воплощаем новые идеи в жизнь!</b></h2>
+          <h3>Мы не смотрим фантастику. Мы в ней живём и работаем. Ваши способности наше вдохновение.</h3>
+        </div>
+          <div class="back_logo"><img src="{% static 'index/img/back_logo.png' %}" width="100%" height="100%"></div>
+          <div class="logo_project"><img src="{% static 'index/img/logo_project.png' %}" ></div>
+      </div>
+    </section>
+    <section class="stages">
+
+      <div class="project_circle_verybig1"></div>
+        <div class="project_circle_big1"></div>
+        <div class="project_circle_little1"></div>
+        <div class="circle_averagelittle1"></div>
+      <div class="caption-stages">
+        <h1>Этапы разработки</h1>
+      </div>
+      <div class="stage">
+          <div class="sources-grid">
+                <button class="source source-1" style="background-color: rgb(0, 123, 255);
+                                                        color: rgb(255, 255, 255);
+                                                        border-radius: 5px;">
+                    Собираем и согласовываем требования</button>
+                <button class="source source-2">Планируем этапы работы</button>
+                <button class="source source-3">Подбираем команду разработчиков</button>
+                <button class="source source-4">Разрабатываем проект</button>
+                <button class="source source-5">Тестируем, внедряем, дорабатываем</button>
+                <button class="source source-6">Сопровождаем проект</button>
+          </div>
+
+
+
+        <div class="target-area">
+            <div class="target target-1">
+                <img src="{% static 'index/img/stage1.svg' %}" width="439.88px" height="327.27px">
+                <div class="tar">
+                  <h3><strong>Собираем и согласовываем требования</strong></h3>Проведём интервью. Выясним ожидания и требования, переведём их в техническое задание. Предложим нестандартное решение основываясь на предпочтениях и современных технологиях.
+                </div>
+              </div>
+            <div class="target target-2">
+                <img src="{% static 'index/img/stage2.svg' %}" width="460.34px" height="354.47px">
+                <div class="tar">
+                  <h3><strong>Планируем этапы работы</strong></h3>Расскажем о вариантах реализации, вместе выберем лучший. Спланируем и согласуем этапы работы, оценим по времени и по ресурсам.
+                </div>
+              </div>
+            <div class="target target-3">
+                <img src="{% static 'index/img/stage3.svg' %}" width="429.66px" height="323.47px">
+                <div class="tar">
+                  <h3><strong>Подбираем команду разработчиков</strong></h3>В проекте будут участвовать разработчики с знанием нужного стека технологий. У нас в команде есть UX-дизайнеры, аналитики, программисты для всех платформ.
+                </div>
+            </div>
+            <div class="target target-4">
+                <img src="{% static 'index/img/stage4.svg' %}" width="501.27px" height="323.13px">
+                <div class="tar">
+                  <h3><strong>Разрабатываем проект</strong></h3>Процесс разработки вашего продукта прозрачен и подконтролен. Мы проводим регулярные демонстрации результатов работы, обсуждаем возможности улучшения с заказчиком и гибко подходим к задачам.
+                </div>
+            </div>
+            <div class="target target-5">
+                <img src="{% static 'index/img/stage5.svg' %}" width="460.34px" height="343.05px">
+                <div class="tar">
+                  <h3><strong>Тестируем, внедряем, дорабатываем</strong></h3>Анализируем и внедряем исправления в проекте, дорабатываем в короткие сроки.
+              </div>
+            </div>
+            <div class="target target-6">
+                <img src="{% static 'index/img/stage6.svg' %}" width="378.5px" height="329.55px">
+                <div class="tar">
+                  <h3><strong>Сопровождаем проект</strong></h3>После публикации продукта, мы продолжаем его
+                        поддерживать.<br> Изучаем поведение пользователей,
+                        достижение целей, проводим<br> тесты и планируем
+                        вместе с заказчиком дальнейшие шаги.
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="stage-mobile">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Собираем и согласовываем требования
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <img src="{% static 'index/img/stage1.svg' %}" width="70%" height="70%">
+                <h1><strong>Собираем и согласовываем требования</strong></h1>Проведём интервью. Выясним ожидания и требования, переведём из в техническое задание. Предложим нестандартное решение основываясь на предпочтениях и современных технологиях.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Планируем этапы работы
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <img src="{% static 'index/img/stage2.svg' %}" width="70%" height="70%">
+                <h1><strong>Планируем этапы работы</strong></h1>Расскажем о вариантах реализации, вместе выберем лучший. Спланируем и согласуем этапы работы, оценим по времени и по ресурсам.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Подбираем команду разработчиков
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <img src="{% static 'index/img/stage3.svg' %}" width="70%" height="70%">
+                <h1><strong>Подбираем команду разработчиков</strong></h1>В проекте будут участвовать разработчики с знанием нужного стека технологий. У нас в команде есть UX-дизайнеры, аналитики, программисты для всех платформ.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Разрабатываем проект
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <img src="{% static 'index/img/stage4.svg' %}" width="70%" height="70%">
+                <h1><strong>Разрабатываем проект </strong></h1>Процесс разработки вашего продукта прозрачен
+                и подконтролен. Мы проводим регулярные демонстрации результатов работы, обсуждаем возможности улучшения с заказчиком и гибко подходим к задачам.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Тестируем, внедряем, дорабатываем
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <img src="{% static 'index/img/stage5.svg' %}" width="70%" height="70%">
+                <h1><strong>Тестируем, внедряем, дорабатываем</strong></h1>Анализируем и внедряем исправления в проекте, дорабатываем в короткие сроки.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                Сопровождаем проект
+              </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <img src="{% static 'index/img/stage6.svg' %}" width="70%" height="70%">
+                <h1><strong>Сопровождаем проект</strong></h1>После публикации продукта, мы продолжаем его
+                поддерживать. Изучаем поведение пользователей,
+                достижение целей, проводим тесты и планируем
+                вместе с заказчиком дальнейшие шаги.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="project ">
+      <div class="title-project">
+        <h1>Наши проекты</h1>
+      </div>
+      <div class="cards_project">
+          {% for project in projects %}
+                  <div class="project_card">
+                  	<a href="{{ project.url }}">
+                      <img src="{{ project.image.url }}" class="project_images">
+                      <div class="product">
+                          <p class="date">{{ project.date }}</p>
+                          <h1>{{ project.title }}</h1>
+                          <p class="desc">{{ project.description }}</p>
+                      </div>
+                      </a>
+                  </div>
+          {% endfor %}
+      </div>
+    </section>
+  {% endblock %}
